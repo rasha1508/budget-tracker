@@ -29,13 +29,11 @@
         --light-gray: #fafafa;
         --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
       }
-
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
-
       body {
         font-family: "Inter", sans-serif;
         background-color: transparent;
@@ -44,7 +42,6 @@
         padding: 20px;
         font-weight: 300;
       }
-
       .widget {
         max-width: 900px;
         margin: 0 auto;
@@ -54,7 +51,6 @@
         overflow: hidden;
         border: 1px solid var(--border-color);
       }
-
       /* Header */
       .widget-header {
         background: linear-gradient(135deg, var(--primary-color), #e6b8b8);
@@ -62,18 +58,15 @@
         padding: 20px;
         text-align: center;
       }
-
       h1 {
         font-family: "Dancing Script", cursive;
         font-size: 2.2rem;
         font-weight: 600;
       }
-
       /* Form Section */
       .widget-content {
         padding: 20px;
       }
-
       .section-title {
         font-family: "Inter", sans-serif;
         font-size: 1.2rem;
@@ -82,19 +75,16 @@
         text-align: center;
         font-weight: 500;
       }
-
       .form-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 16px;
         margin-bottom: 16px;
       }
-
       .form-group {
         display: flex;
         flex-direction: column;
       }
-
       .form-group label {
         font-family: "Inter", sans-serif;
         font-size: 0.85rem;
@@ -102,7 +92,6 @@
         margin-bottom: 6px;
         color: var(--light-text);
       }
-
       .form-group input,
       .form-group select {
         font-family: "Inter", sans-serif;
@@ -114,14 +103,12 @@
         background-color: var(--white);
         font-weight: 300;
       }
-
       .form-group input:focus,
       .form-group select:focus {
         outline: none;
         border-color: var(--primary-color);
         box-shadow: 0 0 0 2px rgba(212, 165, 165, 0.2);
       }
-
       .btn {
         font-family: "Inter", sans-serif;
         background: var(--primary-color);
@@ -138,26 +125,21 @@
         justify-content: center;
         gap: 6px;
       }
-
       .btn:hover {
         background: #c89292;
         transform: translateY(-1px);
       }
-
       .btn-block {
         width: 100%;
       }
-
       .btn-secondary {
         background: transparent;
         color: var(--primary-color);
         border: 1px solid var(--border-color);
       }
-
       .btn-secondary:hover {
         background: var(--accent-color);
       }
-
       /* Expense List */
       .expense-header {
         display: flex;
@@ -165,13 +147,11 @@
         align-items: center;
         margin-bottom: 16px;
       }
-
       .expense-list {
         border: 1px solid var(--border-color);
         border-radius: 6px;
         overflow: hidden;
       }
-
       .expense-item {
         display: flex;
         justify-content: space-between;
@@ -180,21 +160,17 @@
         border-bottom: 1px solid var(--border-color);
         transition: background-color 0.2s;
       }
-
       .expense-item:last-child {
         border-bottom: none;
       }
-
       .expense-item:hover {
         background: var(--accent-color);
       }
-
       .expense-info {
         display: flex;
         align-items: center;
         gap: 12px;
       }
-
       .expense-icon {
         width: 36px;
         height: 36px;
@@ -205,7 +181,6 @@
         justify-content: center;
         color: var(--primary-color);
       }
-
       .expense-details h4 {
         font-family: "Inter", sans-serif;
         font-size: 0.95rem;
@@ -213,26 +188,45 @@
         color: var(--text-color);
         font-weight: 500;
       }
-
       .expense-details p {
         font-family: "Inter", sans-serif;
         font-size: 0.8rem;
         margin: 0;
         color: var(--light-text);
       }
-
+      .expense-meta {
+        display: flex;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .expense-date {
+        font-size: 0.75rem;
+        color: var(--light-text);
+      }
+      .expense-status {
+        font-size: 0.75rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+      .status-paid {
+        background: var(--success-color);
+        color: #2e7d32;
+      }
+      .status-pending {
+        background: var(--warning-color);
+        color: #e65100;
+      }
       .expense-amount {
         font-family: "Inter", sans-serif;
         font-size: 1rem;
         font-weight: 500;
         color: var(--text-color);
       }
-
       .expense-actions {
         display: flex;
         gap: 8px;
       }
-
       .btn-icon {
         width: 28px;
         height: 28px;
@@ -246,37 +240,30 @@
         cursor: pointer;
         transition: all 0.2s ease;
       }
-
       .btn-icon:hover {
         background: var(--border-color);
       }
-
       .btn-icon.edit:hover {
         color: var(--primary-color);
       }
-
       .btn-icon.delete:hover {
         color: #e57373;
       }
-
       /* Empty State */
       .empty-state {
         text-align: center;
         padding: 30px 20px;
         color: var(--light-text);
       }
-
       .empty-state i {
         font-size: 2.5rem;
         margin-bottom: 12px;
         color: var(--primary-color);
       }
-
       .empty-state p {
         font-family: "Inter", sans-serif;
         font-size: 0.95rem;
       }
-
       /* Modal */
       .modal {
         display: none;
@@ -291,7 +278,6 @@
         align-items: center;
         backdrop-filter: blur(2px);
       }
-
       .modal-content {
         background-color: var(--white);
         border-radius: 8px;
@@ -300,14 +286,12 @@
         max-width: 500px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       }
-
       .modal-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
       }
-
       .modal-title {
         font-family: "Inter", sans-serif;
         font-size: 1.2rem;
@@ -315,7 +299,6 @@
         margin: 0;
         font-weight: 500;
       }
-
       .modal-close {
         background: none;
         border: none;
@@ -330,19 +313,16 @@
         align-items: center;
         justify-content: center;
       }
-
       .modal-close:hover {
         color: var(--danger-color);
         background: var(--accent-color);
       }
-
       .modal-actions {
         display: flex;
         justify-content: flex-end;
         gap: 12px;
         margin-top: 20px;
       }
-
       /* Notification */
       .notification {
         position: fixed;
@@ -362,21 +342,64 @@
         z-index: 999;
         border: 1px solid var(--border-color);
       }
-
       .notification.show {
         transform: translateY(0);
         opacity: 1;
       }
-
       .notification i {
         color: var(--primary-color);
       }
-
       .notification span {
         font-family: "Inter", sans-serif;
         font-size: 0.9rem;
       }
-
+      /* Budget Summary */
+      .budget-summary {
+        background: var(--accent-color);
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 20px;
+        border: 1px solid var(--border-color);
+      }
+      .budget-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+      .budget-title {
+        font-weight: 500;
+        color: var(--text-color);
+      }
+      .budget-amount {
+        font-weight: 600;
+        color: var(--text-color);
+      }
+      .progress-bar {
+        height: 12px;
+        background: var(--border-color);
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 8px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--primary-color), #e6b8b8);
+        border-radius: 6px;
+        transition: width 0.5s ease;
+      }
+      .budget-stats {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+        color: var(--light-text);
+      }
+      .budget-warning {
+        color: #e57373;
+        font-weight: 500;
+        margin-top: 8px;
+        text-align: center;
+        display: none;
+      }
       /* Responsive */
       @media (max-width: 768px) {
         .expense-header {
@@ -384,13 +407,11 @@
           gap: 12px;
           align-items: flex-start;
         }
-
         .expense-item {
           flex-direction: column;
           align-items: flex-start;
           gap: 12px;
         }
-
         .expense-actions {
           align-self: flex-end;
         }
@@ -402,8 +423,25 @@
       <div class="widget-header">
         <h1>Expense Tracker</h1>
       </div>
-
       <div class="widget-content">
+        <!-- Budget Summary -->
+        <div class="budget-summary">
+          <div class="budget-header">
+            <span class="budget-title">Total Budget</span>
+            <span class="budget-amount" id="total-budget-display">$0.00</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="budget-progress" style="width: 0%"></div>
+          </div>
+          <div class="budget-stats">
+            <span>Spent: <span id="total-spent">$0.00</span></span>
+            <span>Remaining: <span id="budget-remaining">$0.00</span></span>
+          </div>
+          <div class="budget-warning" id="budget-warning">
+            <i class="fas fa-exclamation-triangle"></i> You've exceeded your budget!
+          </div>
+        </div>
+
         <!-- Add Expense Form -->
         <h2 class="section-title">Add New Expense</h2>
         <div class="form-grid">
@@ -436,6 +474,17 @@
             </select>
           </div>
           <div class="form-group">
+            <label for="expense-date">Date</label>
+            <input type="date" id="expense-date" />
+          </div>
+          <div class="form-group">
+            <label for="expense-status">Payment Status</label>
+            <select id="expense-status">
+              <option value="paid">Paid</option>
+              <option value="pending">Pending</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="total-budget-input">Total Budget ($)</label>
             <input
               type="number"
@@ -449,7 +498,6 @@
         <button class="btn btn-block" id="add-expense-btn">
           <i class="fas fa-plus"></i> Add Expense
         </button>
-
         <!-- Expense List -->
         <div class="expense-header" style="margin-top: 24px">
           <h2 class="section-title">Expense List</h2>
@@ -465,7 +513,6 @@
         </div>
       </div>
     </div>
-
     <!-- Edit Modal -->
     <div class="modal" id="edit-modal">
       <div class="modal-content">
@@ -495,19 +542,28 @@
             <option value="other">Other</option>
           </select>
         </div>
+        <div class="form-group">
+          <label for="edit-expense-date">Date</label>
+          <input type="date" id="edit-expense-date" />
+        </div>
+        <div class="form-group">
+          <label for="edit-expense-status">Payment Status</label>
+          <select id="edit-expense-status">
+            <option value="paid">Paid</option>
+            <option value="pending">Pending</option>
+          </select>
+        </div>
         <div class="modal-actions">
           <button class="btn btn-secondary" id="cancel-edit-btn">Cancel</button>
           <button class="btn" id="save-edit-btn">Save Changes</button>
         </div>
       </div>
     </div>
-
     <!-- Notification -->
     <div class="notification" id="notification">
       <i class="fas fa-check-circle"></i>
       <span id="notification-text"></span>
     </div>
-
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         // Elements
@@ -516,10 +572,17 @@
         const expenseAmountInput = document.getElementById("expense-amount");
         const expenseCategorySelect =
           document.getElementById("expense-category");
+        const expenseDateInput = document.getElementById("expense-date");
+        const expenseStatusSelect = document.getElementById("expense-status");
         const addExpenseBtn = document.getElementById("add-expense-btn");
         const clearAllBtn = document.getElementById("clear-all-btn");
         const expenseList = document.getElementById("expense-list");
-
+        // Budget display elements
+        const totalBudgetDisplay = document.getElementById("total-budget-display");
+        const totalSpentDisplay = document.getElementById("total-spent");
+        const budgetRemainingDisplay = document.getElementById("budget-remaining");
+        const budgetProgressBar = document.getElementById("budget-progress");
+        const budgetWarning = document.getElementById("budget-warning");
         // Modal elements
         const editModal = document.getElementById("edit-modal");
         const modalClose = document.getElementById("modal-close");
@@ -530,18 +593,22 @@
         const editExpenseCategory = document.getElementById(
           "edit-expense-category"
         );
+        const editExpenseDate = document.getElementById("edit-expense-date");
+        const editExpenseStatus = document.getElementById("edit-expense-status");
         const saveEditBtn = document.getElementById("save-edit-btn");
         const cancelEditBtn = document.getElementById("cancel-edit-btn");
-
         // Notification elements
         const notification = document.getElementById("notification");
         const notificationText = document.getElementById("notification-text");
-
         // Data
         let totalBudget = 0;
         let expenses = [];
         let editingExpenseId = null;
-
+        
+        // Set today's date as default
+        const today = new Date().toISOString().split('T')[0];
+        expenseDateInput.value = today;
+        
         // Category icons
         const categoryIcons = {
           venue: "fas fa-building",
@@ -554,7 +621,6 @@
           rings: "fas fa-ring",
           other: "fas fa-ellipsis-h",
         };
-
         // Category names
         const categoryNames = {
           venue: "Venue",
@@ -567,29 +633,34 @@
           rings: "Rings",
           other: "Other",
         };
-
         // Load from local storage
         function loadData() {
           const savedBudget = localStorage.getItem("weddingTotalBudget");
           const savedExpenses = localStorage.getItem("weddingExpenses");
-
           if (savedBudget) {
             totalBudget = parseFloat(savedBudget);
             totalBudgetInput.value = totalBudget;
           }
-
           if (savedExpenses) {
             expenses = JSON.parse(savedExpenses);
+            // For backward compatibility, add default date and status if missing
+            expenses = expenses.map(expense => {
+              if (!expense.date) {
+                expense.date = today;
+              }
+              if (!expense.status) {
+                expense.status = "paid";
+              }
+              return expense;
+            });
           }
-
+          updateBudgetDisplay();
           renderExpenseList();
         }
-
         // Save to local storage
         function saveData() {
           localStorage.setItem("weddingTotalBudget", totalBudget.toString());
           localStorage.setItem("weddingExpenses", JSON.stringify(expenses));
-
           // Trigger storage event to sync other components
           window.dispatchEvent(
             new StorageEvent("storage", {
@@ -599,7 +670,28 @@
             })
           );
         }
-
+        // Update budget display
+        function updateBudgetDisplay() {
+          const totalSpent = expenses.reduce((sum, expense) => sum + expense.amount, 0);
+          const remaining = totalBudget - totalSpent;
+          
+          totalBudgetDisplay.textContent = formatCurrency(totalBudget);
+          totalSpentDisplay.textContent = formatCurrency(totalSpent);
+          budgetRemainingDisplay.textContent = formatCurrency(remaining);
+          
+          // Update progress bar
+          const percentage = totalBudget > 0 ? Math.min(100, (totalSpent / totalBudget) * 100) : 0;
+          budgetProgressBar.style.width = `${percentage}%`;
+          
+          // Show warning if over budget
+          if (remaining < 0) {
+            budgetWarning.style.display = "block";
+            budgetProgressBar.style.background = "linear-gradient(90deg, #e57373, #ef9a9a)";
+          } else {
+            budgetWarning.style.display = "none";
+            budgetProgressBar.style.background = "linear-gradient(90deg, var(--primary-color), #e6b8b8)";
+          }
+        }
         // Show notification
         function showNotification(message) {
           notificationText.textContent = message;
@@ -608,7 +700,6 @@
             notification.classList.remove("show");
           }, 3000);
         }
-
         // Format currency
         function formatCurrency(amount) {
           return new Intl.NumberFormat("en-US", {
@@ -617,7 +708,11 @@
             minimumFractionDigits: 2,
           }).format(amount);
         }
-
+        // Format date
+        function formatDate(dateString) {
+          const options = { year: 'numeric', month: 'short', day: 'numeric' };
+          return new Date(dateString).toLocaleDateString(undefined, options);
+        }
         // Render expense list
         function renderExpenseList() {
           if (expenses.length === 0) {
@@ -629,14 +724,11 @@
                     `;
             return;
           }
-
           expenseList.innerHTML = "";
-
           // Sort expenses by amount (highest first)
           const sortedExpenses = [...expenses].sort(
             (a, b) => b.amount - a.amount
           );
-
           sortedExpenses.forEach((expense) => {
             const expenseItem = document.createElement("div");
             expenseItem.className = "expense-item";
@@ -650,6 +742,10 @@
                             <div class="expense-details">
                                 <h4>${expense.name}</h4>
                                 <p>${categoryNames[expense.category]}</p>
+                                <div class="expense-meta">
+                                    <span class="expense-date">${formatDate(expense.date)}</span>
+                                    <span class="expense-status status-${expense.status}">${expense.status}</span>
+                                </div>
                             </div>
                         </div>
                         <div class="expense-amount">${formatCurrency(
@@ -668,10 +764,8 @@
                             </button>
                         </div>
                     `;
-
             expenseList.appendChild(expenseItem);
           });
-
           // Add event listeners to edit and delete buttons
           document.querySelectorAll(".btn-icon.edit").forEach((btn) => {
             btn.addEventListener("click", () => {
@@ -679,7 +773,6 @@
               editExpense(expenseId);
             });
           });
-
           document.querySelectorAll(".btn-icon.delete").forEach((btn) => {
             btn.addEventListener("click", () => {
               const expenseId = parseInt(btn.getAttribute("data-id"));
@@ -687,98 +780,108 @@
             });
           });
         }
-
         // Add expense
         addExpenseBtn.addEventListener("click", () => {
           const name = expenseNameInput.value.trim();
           const amount = parseFloat(expenseAmountInput.value);
           const category = expenseCategorySelect.value;
-
+          const date = expenseDateInput.value;
+          const status = expenseStatusSelect.value;
+          
           if (!name) {
             showNotification("Please enter an expense name");
             return;
           }
-
           if (isNaN(amount) || amount <= 0) {
             showNotification("Please enter a valid amount");
             return;
           }
-
+          if (!date) {
+            showNotification("Please select a date");
+            return;
+          }
+          
           // Update total budget if provided
           const newBudget = parseFloat(totalBudgetInput.value);
           if (!isNaN(newBudget) && newBudget > 0) {
             totalBudget = newBudget;
           }
-
+          
           // Add expense
           const newExpense = {
             id: Date.now(),
             name,
             amount,
             category,
+            date,
+            status,
           };
-
           expenses.push(newExpense);
           saveData();
+          updateBudgetDisplay();
           renderExpenseList();
           showNotification("Expense added successfully!");
-
+          
           // Reset form
           expenseNameInput.value = "";
           expenseAmountInput.value = "";
           expenseCategorySelect.value = "venue";
+          expenseDateInput.value = today;
+          expenseStatusSelect.value = "paid";
         });
-
         // Clear all expenses
         clearAllBtn.addEventListener("click", () => {
           if (expenses.length === 0) {
             showNotification("No expenses to clear");
             return;
           }
-
           expenses = [];
           saveData();
+          updateBudgetDisplay();
           renderExpenseList();
           showNotification("All expenses cleared successfully!");
         });
-
         // Edit expense
         function editExpense(id) {
           const expense = expenses.find((e) => e.id === id);
           if (!expense) return;
-
           editingExpenseId = id;
           editExpenseName.value = expense.name;
           editExpenseAmount.value = expense.amount;
           editExpenseCategory.value = expense.category;
-
+          editExpenseDate.value = expense.date;
+          editExpenseStatus.value = expense.status;
           editModal.style.display = "flex";
         }
-
         // Delete expense
         function deleteExpense(id) {
           expenses = expenses.filter((e) => e.id !== id);
           saveData();
+          updateBudgetDisplay();
           renderExpenseList();
           showNotification("Expense deleted successfully!");
         }
-
         // Save edit
         saveEditBtn.addEventListener("click", () => {
           const name = editExpenseName.value.trim();
           const amount = parseFloat(editExpenseAmount.value);
           const category = editExpenseCategory.value;
-
+          const date = editExpenseDate.value;
+          const status = editExpenseStatus.value;
+          
           if (!name) {
             showNotification("Please enter an expense name");
             return;
           }
-
           if (isNaN(amount) || amount <= 0) {
             showNotification("Please enter a valid amount");
             return;
           }
-
+          if (!date) {
+            showNotification("Please select a date");
+            return;
+          }
+          
           const expenseIndex = expenses.findIndex(
             (e) => e.id === editingExpenseId
           );
@@ -788,32 +891,30 @@
               name,
               amount,
               category,
+              date,
+              status,
             };
-
             saveData();
+            updateBudgetDisplay();
             renderExpenseList();
             showNotification("Expense updated successfully!");
             editModal.style.display = "none";
           }
         });
-
         // Cancel edit
         cancelEditBtn.addEventListener("click", () => {
           editModal.style.display = "none";
         });
-
         // Close modal when clicking outside
         window.addEventListener("click", (e) => {
           if (e.target === editModal) {
             editModal.style.display = "none";
           }
         });
-
         // Close modal
         modalClose.addEventListener("click", () => {
           editModal.style.display = "none";
         });
-
         // Initialize
         loadData();
       });
